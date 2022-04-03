@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--font styles-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet"/> -->
+    <link
+      rel="shortcut"
+      href="img/Abstract letter N modern logo icon design.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+
+    <!--javascript linking-->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="img/logo1.png" alt="background" class="nav-logo" />
+        </div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--btn btn--scroll-to"
+              href="#section--1"
+              >Skills</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--btn btn--scroll-to"
+              href="#section--1"
+              >Hobbies</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--btn btn--scroll-to"
+              href="#section--2"
+            >
+              Resume</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--btn btn--scroll-to"
+              href="#section--2"
+            >
+              More</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3 class="title--1">Welcome to my world !</h3>
+      <h1 class="title--2">Abhishek Manoj More</h1>
+      <h2 class="title--3">Front-End Developer</h2>
+      <button class="button btn--scroll-to">
+        <span><a href="#section--1">Read more</a> </span>
+      </button>
+    </header>
+    <!-- <div class="bar"></div> -->
+    <div class="content">
+      <div class="context" id="section--1">
+        <img src="img/skills.jpg" alt="skills" class="box context__img" />
+        <h5 class="context__name">SKILLS</h5>
+        <p class="context__quote">
+          “The future belongs to those who learn more skills and combine them in
+          creative ways.”
+        </p>
+        <p class="context__quote--1">— Robert Greene</p>
+        <button class="button button__context btn--show-modal">Explore</button>
+      </div>
+      <div class="context" id="section--1">
+        <img src="img/hobbies.jpg" alt="hobbies" class="box context__img" />
+        <h5 class="context__name">HOBBIES</h5>
+        <p class="context__quote">
+          “Persistence. Perfection. Patience. Power. Prioritize your passion. It
+          keeps you sane.”
+        </p>
+        <p class="context__quote--1">― Criss Jami</p>
+        <button class="button button__context btn--show-modal">Explore</button>
+      </div>
+      <div class="context" id="section--2">
+        <img src="img/resume.jpg" alt="resume" class="box context__img" />
+        <h5 class="context__name">RESUME</h5>
+        <p class="context__quote">
+          "Every skill you acquire doubles your odds of success."
+        </p>
+        <p class="context__quote--1">- Scott Adams</p>
+        <button class="button button__context btn--show-modal">Explore</button>
+      </div>
+
+      <div class="context" id="section--2">
+        <img src="img/project.jpg" alt="resume" class="box context__img" />
+        <h5 class="context__name">PROJECTS</h5>
+        <p class="context__quote">Some things which i tried to create</p>
+        <button class="button button__context btn--show-modal">Explore</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal hidden modal_skills">
+      <button class="btn--close-modal">&times;</button>
+      <h3 class="modal__header">Skills</h3>
+      <ul class="skills_order">
+        <li class="skills_diff">
+          <a href="#" class="skills_diff-1">HTML5</a>
+        </li>
+        <li class="skills_diff">
+          <a href="#" class="skills_diff-2">CSS</a>
+        </li>
+        <li class="skills_diff">
+          <a href="#" class="skills_diff-3">Sass</a>
+        </li>
+        <li class="skills_diff">
+          <a href="#" class="skills_diff-4">javascript</a>
+        </li>
+        <li class="skills_diff">
+          <a href="#" class="skills_diff-5">Wordpress</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
